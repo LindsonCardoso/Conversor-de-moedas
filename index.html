@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Conrveso de Moedas</title>
+
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&display=swap" rel="stylesheet">
+
+ 
+</head>
+<body>
+ 
+        <div id="app" >
+                <div id="card-center" class="filter">      
+                
+                <div id="card-text">
+                        <h1 styles="">Conversor de moedas</h1>
+                        <h2 styles="">Descubra os valores em dolar U$</h2>
+                </div>
+                <br>
+                <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" styles="" alt="">
+                      
+              
+              
+           
+            
+                   <input type="number" id="Inouu"   placeholder="Digite o valor aqui" /> <br>
+              
+                  
+
+
+                   <button  type="submit" class="btn" value="valor" >Converter</button>    
+             
+                   <span id="valorDigitado"></span>
+
+
+                   <br> 
+                   <br>
+              
+        </div> 
+           
+        </div>
+
+
+        <script>
+                
+  
+                const button = document.querySelector('button')
+                button.onclick = () => {
+                var  valorDolar = Number(document.querySelector('input').value);
+                        document.getElementById('valorDigitado').innerHTML = 'R$ '+(valorDolar * 5.51 ).toFixed(2);
+                        console.log(valorDolar);   
+                }
+
+    
+
+        </script>
+
+</body>
+</html>

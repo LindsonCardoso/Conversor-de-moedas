@@ -1,0 +1,139 @@
+
+
+body{
+
+    font-family: 'Averia Serif Libre', cursive;
+    background-image: url('https://static.wixstatic.com/media/fe4ea5_67a0c998f202488787f9f90015ebbb2f~mv2.gif');
+    
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-attachment: fixed;
+    background-size: cover;
+    
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+
+}
+
+#app{
+    
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;    
+  
+    margin-right: auto;
+    margin-left: auto
+}
+
+/*
+#app > div h1 {
+
+    font-size:  70px;
+    color: white;
+    font-weight: bold;
+
+}
+
+
+
+
+.card-center {
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 30px;
+    margin: 0 auto;
+     background-position: center -100px;
+     -webkit-filter: blur(7px); 
+}*/
+
+.filter{
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate3d( 36%, 30%, 0 );
+    width: 60%;
+    height: 60%;
+    z-index: 30;
+    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 5px;
+}
+
+#card-text h1{
+    padding: 20px 26px;
+    display: block;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 50px;
+}
+#card-center > div h2 {
+    color: white;
+    font-size: 28px;
+
+}
+#card-center > img {
+  
+    width: 22%;
+
+}
+
+#Inouu {
+    margin-top: 45px;
+    border-radius: 5px;
+    height:7%;
+    width: 20%;
+    color: black;
+     text-align: center;
+     display: block;
+     font-size: 20px;
+}
+
+.btn {
+    display: block;
+    height: 100px;
+    width: 18%;
+    border: none;
+    background-color: yellow;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 600;
+}
+
+.btn:hover {
+
+    background-color: #FFF;
+    color: black;
+
+}
+
+#card-center > span{
+
+    padding: 20px;
+    font-size: 40px;
+    margin-bottom: 40px;
+
+}
+
+#inputs{
+    flex: 1;
+    flex-direction: row;
+
+}
